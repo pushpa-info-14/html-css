@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+}
+
+.theme-2025 {
+  h1 {
+    color: red;
+  }
+}

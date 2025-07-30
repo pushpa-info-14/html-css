@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Last Div Fills Remaining Height</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .header {
+        background: lightblue;
+        padding: 20px;
+      }
+
+      .content {
+        background: lightgreen;
+        flex: 1; /* This makes it take remaining space */
+        padding: 20px;
+      }
+
+      .footer {
+        background: lightcoral;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="content">This div takes the remaining height</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

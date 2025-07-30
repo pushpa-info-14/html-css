@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid Column Full Height</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%; /* Set a height for the grid */
+        gap: 10px;
+      }
+
+      .first {
+        background-color: lightblue;
+      }
+
+      .second {
+        background-color: lightgreen;
+        height: 100%; /* Important for child div */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="first">First div (left column)</div>
+      <div class="second">Second div (right column - full height)</div>
+    </div>
+  </body>
+</html>
